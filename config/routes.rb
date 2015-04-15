@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root 'pictures#index'
   get 'pictures' => 'pictures#index'
   post 'pictures/create' => 'pictures#create'
   get 'pictures/new' => 'pictures#new'

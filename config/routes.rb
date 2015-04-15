@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   get 'pictures' => 'pictures#index'
-  
+  get 'pictures/:id' => 'pictures#show', as: 'picture'
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -56,4 +57,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
